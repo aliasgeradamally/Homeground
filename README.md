@@ -36,3 +36,13 @@ JavaScript syntax and automated logic checks passed. Asset existence, image deco
 Original orchid–HDB logo and brand illustrations are extracted as rectangular crops from user-supplied brand artwork without redrawing or recolouring. Passport logo is extracted from the supplied physical passport reference. Interior/exterior concepts and spatial layout are user-supplied, resized/compressed for delivery without redesign. The original illustrations contain their own source colours/textures; application UI uses the four specified brand colours.
 
 Display font: Fraunces by Undercase Type, SIL Open Font License; locally bundled. Supporting type uses system Arial/Helvetica. QR generator: qrcode-generator 1.4.4 by Kazuhiko Arase, MIT license, preserved in the source header. See `assets/Fraunces-OFL.txt`.
+
+## Visual refinement — November 2026
+
+Supporting text now requests locally available Aptos, with Segoe UI, Calibri and system sans-serif fallbacks. Proprietary font files are not bundled. Serif display headings are unchanged. Primary and secondary actions share a 52px height and 216px desktop width; peer controls align evenly and actions fill their mobile container. Functional filters remain; decorative pills and repeated footer explanations were removed. Demo booking labels remain at booking and confirmation.
+
+The illustration strip uses a high-resolution transparent edit, presented through a tightly cropped SVG viewport without raster resampling. The orchid–HDB logo is unchanged; its existing paper background blends into the cream UI. Interior photos remain at their supplied resolution with consistent responsive crops.
+
+Image edit used the built-in image generation tool. Prompt: Remove the cream paper background and clipped heading from the original illustration strip, preserve HDB buildings, shrubs, MRT train, umbrella and communal table; retain intentional cream interiors; output high-resolution alpha transparency. Second pass: clean stray edge fragments and preserve the composition. Final asset: assets/illustrations-clean.svg, embedding the edited PNG.
+
+Browser inspection remains blocked by a saved local-origin permission. Route rendering, asset references and JavaScript syntax were checked directly.
