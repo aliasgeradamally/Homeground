@@ -14,7 +14,7 @@ Open `index.html` directly, or use `python3 -m http.server 8765` in this directo
 - Editable passport details and four optional manually recorded stamps.
 - 28 searchable Singlish phrases, category filters, device-local favourites, random discovery and free-play sentence builder.
 - Device speech synthesis where supported; pronunciation depends on installed voices.
-- Browser-local persistence; visit data can be cleared from the information menu.
+- Browser-local persistence for bookings, passport details, stamps and favourites.
 
 All booking dates deliberately use the speculative 2050 season. Initial availability is deterministic illustrative data; bookings created on this device reduce its remaining capacity. Nothing is reserved globally. QR codes encode only a demo booking reference, not personal information. Downloaded passes are not valid for admission. Stamps form one visitor keepsake and can be manually undone; booking another visit does not automatically erase them.
 
@@ -39,7 +39,7 @@ Display font: Fraunces by Undercase Type, SIL Open Font License; locally bundled
 
 ## Visual refinement — November 2026
 
-Supporting text now requests locally available Aptos, with Segoe UI, Calibri and system sans-serif fallbacks. Proprietary font files are not bundled. Serif display headings are unchanged. Primary and secondary actions share a 52px height and 216px desktop width; peer controls align evenly and actions fill their mobile container. Functional filters remain; decorative pills and repeated footer explanations were removed. Demo booking labels remain at booking and confirmation.
+Supporting text now requests locally available Aptos, with Segoe UI, Calibri and system sans-serif fallbacks. Proprietary font files are not bundled. Serif display headings are unchanged. Primary and secondary actions share a 52px height and 216px desktop width; peer controls align evenly and actions fill their mobile container. Functional filters remain; decorative pills and repeated footer explanations were removed. Repeated prototype notices and explanatory footnotes have been removed from the interface.
 
 The illustration strip uses a high-resolution transparent edit, presented through a tightly cropped SVG viewport without raster resampling. The header now uses assets/logo-transparent.png with real alpha transparency instead of blending the paper background. The original source asset is retained. Interior photos remain at their supplied resolution with consistent responsive crops.
 
@@ -50,3 +50,7 @@ Browser inspection remains blocked by a saved local-origin permission. Route ren
 Header logo background removal: built-in image editing, preserving the orchid–HDB emblem and homeground. lettering while removing the cream paper background. Transparent corners and alpha pixels were checked directly.
 
 Passport logo uses assets/passport-logo-transparent.svg, embedding the original artwork with an alpha colour mask, preserving its original geometry. Generated passport alternatives were rejected for visible edge artifacts.
+
+## Copy cleanup
+
+Removed repeated disclaimers and non-essential helper notes throughout booking, passport and Singlish. The information panel now describes Homeground and its experiences. Removed clear-data buttons and their event handlers without deleting any existing visitor data. Booking, availability and passport functionality remain browser-local simulations as documented above.
