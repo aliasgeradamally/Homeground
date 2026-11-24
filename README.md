@@ -41,8 +41,12 @@ Display font: Fraunces by Undercase Type, SIL Open Font License; locally bundled
 
 Supporting text now requests locally available Aptos, with Segoe UI, Calibri and system sans-serif fallbacks. Proprietary font files are not bundled. Serif display headings are unchanged. Primary and secondary actions share a 52px height and 216px desktop width; peer controls align evenly and actions fill their mobile container. Functional filters remain; decorative pills and repeated footer explanations were removed. Demo booking labels remain at booking and confirmation.
 
-The illustration strip uses a high-resolution transparent edit, presented through a tightly cropped SVG viewport without raster resampling. The orchid–HDB logo is unchanged; its existing paper background blends into the cream UI. Interior photos remain at their supplied resolution with consistent responsive crops.
+The illustration strip uses a high-resolution transparent edit, presented through a tightly cropped SVG viewport without raster resampling. The header now uses assets/logo-transparent.png with real alpha transparency instead of blending the paper background. The original source asset is retained. Interior photos remain at their supplied resolution with consistent responsive crops.
 
 Image edit used the built-in image generation tool. Prompt: Remove the cream paper background and clipped heading from the original illustration strip, preserve HDB buildings, shrubs, MRT train, umbrella and communal table; retain intentional cream interiors; output high-resolution alpha transparency. Second pass: clean stray edge fragments and preserve the composition. Final asset: assets/illustrations-clean.svg, embedding the edited PNG.
 
 Browser inspection remains blocked by a saved local-origin permission. Route rendering, asset references and JavaScript syntax were checked directly.
+
+Header logo background removal: built-in image editing, preserving the orchid–HDB emblem and homeground. lettering while removing the cream paper background. Transparent corners and alpha pixels were checked directly.
+
+Passport logo uses assets/passport-logo-transparent.svg, embedding the original artwork with an alpha colour mask, preserving its original geometry. Generated passport alternatives were rejected for visible edge artifacts.
