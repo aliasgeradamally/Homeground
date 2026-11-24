@@ -54,3 +54,11 @@ Passport logo uses assets/passport-logo-transparent.svg, embedding the original 
 ## Copy cleanup
 
 Removed repeated disclaimers and non-essential helper notes throughout booking, passport and Singlish. The information panel now describes Homeground and its experiences. Removed clear-data buttons and their event handlers without deleting any existing visitor data. Booking, availability and passport functionality remain browser-local simulations as documented above.
+
+## Mobile layout and home-screen icons
+
+The mobile navigation is inset 14px from the sides and 12px above the bottom safe area. Mobile headings, card padding, photos and passport stamps are more compact; main controls are 48px tall and input text stays at 16px.
+
+manifest.webmanifest provides a relative start URL and scope for GitHub Pages. The app icon uses the existing orchid–HDB emblem without the wordmark, on warm cream. PNG sizes include 192px, 512px, a separately padded 512px maskable version, a 180px Apple touch icon and a 32px favicon. Editable SVG sources are included. No runtime icon-generation dependency or service worker was added.
+
+Upload manifest.webmanifest and assets/icons alongside the updated HTML, CSS and JavaScript. Existing home-screen shortcuts may retain cached artwork; re-add the shortcut if necessary after publication.
